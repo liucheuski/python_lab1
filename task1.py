@@ -3,6 +3,8 @@
 while (True):
     n = int(input("Введите число от 10 до 99 \n"))
     print("Вы ввели: " + str(n))
+    if n < 10 or n>99:
+        print("Вы нарушили условие задачи.  Число должно быть от 10 до 99")
     string = str(n)
     numbers = list(string)
     if "1" in numbers or "9" in numbers:
